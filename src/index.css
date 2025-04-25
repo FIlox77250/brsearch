@@ -1,0 +1,103 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, html {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  min-width: 320px;
+  background: #fff;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.logo-brsearch {
+  font-family: 'Product Sans', 'Google Sans', Arial, sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: -3px;
+  user-select: none;
+  margin-bottom: 36px;
+  display: flex;
+  align-items: flex-end;
+}
+.logo-brsearch .br {
+  background: linear-gradient(90deg, #a770ef 0%, #8f6be8 20%, #7f53ac 60%, #647dee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.logo-brsearch .search {
+  color: #7f53ac;
+  font-weight: 400;
+  margin-left: 4px;
+  letter-spacing: -1px;
+}
+
+.search-bar {
+  width: 560px;
+  background: #fff;
+  border-radius: 28px;
+  border: 1px solid #dfe1e5;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  padding: 0 16px;
+  height: 48px;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+.search-bar:focus-within {
+  box-shadow: 0 2px 8px 0 rgba(32,33,36,0.32);
+  border: 1.5px solid #c6a0f6;
+}
+.input-search {
+  flex: 1 1 auto;
+  height: 44px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  font-family: inherit;
+  padding: 0 8px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon.left {
+  margin-left: 0;
+  margin-right: 8px;
+}
+.icon.right {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+@media (max-width: 700px) {
+  .search-bar {
+    width: 95vw;
+    min-width: 0;
+    max-width: 99vw;
+  }
+  .logo-brsearch {
+    font-size: 12vw;
+  }
+}
